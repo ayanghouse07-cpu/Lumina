@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina | Creative Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              lumina: {
+                black: '#030303',
+                dark: '#0a0a0a',
+                orange: '#FF6A00', // Adjusted to match gradient end
+                orangeDark: '#cc4400',
+                gray: '#1a1a1a',
+                text: '#9CA3AF'
+              }
+            },
+            backgroundImage: {
+              'lumina-gradient': 'linear-gradient(135deg, #FF8A34 0%, #FF7A18 45%, #FF6A00 100%)',
+              'glow-gradient': 'radial-gradient(circle at center, rgba(255, 85, 0, 0.15) 0%, rgba(3, 3, 3, 0) 70%)',
+              'card-gradient': 'linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.0) 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #030303;
+        color: white;
+        overflow-x: hidden;
+      }
+      .grid-lines {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 20% 100%; /* 5 columns roughly */
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #030303;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
